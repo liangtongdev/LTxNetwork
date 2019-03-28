@@ -1,0 +1,6 @@
+framework module Pods_LTxNetworkDemo {
+  umbrella header "Pods-LTxNetworkDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

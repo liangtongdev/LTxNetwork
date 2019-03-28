@@ -1,0 +1,58 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - FMDBExtension (0.0.1):
+    - FMDB
+  - LTxConfig (0.0.1):
+    - LTxConfig/Core (= 0.0.1)
+  - LTxConfig/Core (0.0.1)
+  - LTxNetwork (0.0.1):
+    - AFNetworking
+    - FMDBExtension
+    - LTxConfig
+    - LTxNetwork/Core (= 0.0.1)
+  - LTxNetwork/Core (0.0.1):
+    - AFNetworking
+    - FMDBExtension
+    - LTxConfig
+
+DEPENDENCIES:
+  - LTxNetwork (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - FMDB
+    - FMDBExtension
+    - LTxConfig
+
+EXTERNAL SOURCES:
+  LTxNetwork:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  FMDBExtension: db59d5fd0bb1d63a4140c07dd731c97fae1ffdfa
+  LTxConfig: 210c96988124f9debc08fc6be7153903500259e3
+  LTxNetwork: 3673239e32e50491c99939384b6fa4e364fe3a6d
+
+PODFILE CHECKSUM: df68dc4f6af605eb36f75776b54e7927d826bb17
+
+COCOAPODS: 1.6.1

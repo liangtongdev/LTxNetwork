@@ -1,0 +1,6 @@
+framework module LTxConfig {
+  umbrella header "LTxConfig-umbrella.h"
+
+  export *
+  module * { export * }
+}
