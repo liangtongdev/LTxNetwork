@@ -9,26 +9,29 @@
 /* Begin PBXBuildFile section */
 		255FC2195F5479C94113BAC5 /* Pods_LTxNetworkDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 615D16BE8654EF5A02ADACED /* Pods_LTxNetworkDemo.framework */; };
 		27414458224CA81700DF0555 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27414457224CA81700DF0555 /* AppDelegate.m */; };
-		2741445B224CA81700DF0555 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2741445A224CA81700DF0555 /* ViewController.m */; };
 		2741445E224CA81700DF0555 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2741445C224CA81700DF0555 /* Main.storyboard */; };
 		27414460224CA81900DF0555 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2741445F224CA81900DF0555 /* Assets.xcassets */; };
 		27414463224CA81900DF0555 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27414461224CA81900DF0555 /* LaunchScreen.storyboard */; };
 		27414466224CA81900DF0555 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27414465224CA81900DF0555 /* main.m */; };
 		274144A4224CC4AD00DF0555 /* LTxConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 274144A3224CC4AD00DF0555 /* LTxConfig.plist */; };
+		274144A7224DB8BF00DF0555 /* DownloadDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274144A6224DB8BF00DF0555 /* DownloadDemoViewController.m */; };
+		274144AA224DE56500DF0555 /* HttpDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274144A9224DE56500DF0555 /* HttpDemoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		27414453224CA81600DF0555 /* LTxNetworkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LTxNetworkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27414456224CA81600DF0555 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		27414457224CA81700DF0555 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		27414459224CA81700DF0555 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2741445A224CA81700DF0555 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2741445D224CA81700DF0555 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2741445F224CA81900DF0555 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27414462224CA81900DF0555 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27414464224CA81900DF0555 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27414465224CA81900DF0555 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		274144A3224CC4AD00DF0555 /* LTxConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LTxConfig.plist; sourceTree = "<group>"; };
+		274144A5224DB8BF00DF0555 /* DownloadDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownloadDemoViewController.h; sourceTree = "<group>"; };
+		274144A6224DB8BF00DF0555 /* DownloadDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownloadDemoViewController.m; sourceTree = "<group>"; };
+		274144A8224DE56500DF0555 /* HttpDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpDemoViewController.h; sourceTree = "<group>"; };
+		274144A9224DE56500DF0555 /* HttpDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpDemoViewController.m; sourceTree = "<group>"; };
 		4E4F319241491DEE8BAFB058 /* Pods-LTxNetworkDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LTxNetworkDemo.debug.xcconfig"; path = "Target Support Files/Pods-LTxNetworkDemo/Pods-LTxNetworkDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		615D16BE8654EF5A02ADACED /* Pods_LTxNetworkDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LTxNetworkDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDF0547F9567D3B34E5F9AE2 /* Pods-LTxNetworkDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LTxNetworkDemo.release.xcconfig"; path = "Target Support Files/Pods-LTxNetworkDemo/Pods-LTxNetworkDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -70,13 +73,15 @@
 				274144A3224CC4AD00DF0555 /* LTxConfig.plist */,
 				27414456224CA81600DF0555 /* AppDelegate.h */,
 				27414457224CA81700DF0555 /* AppDelegate.m */,
-				27414459224CA81700DF0555 /* ViewController.h */,
-				2741445A224CA81700DF0555 /* ViewController.m */,
 				2741445C224CA81700DF0555 /* Main.storyboard */,
 				2741445F224CA81900DF0555 /* Assets.xcassets */,
 				27414461224CA81900DF0555 /* LaunchScreen.storyboard */,
 				27414464224CA81900DF0555 /* Info.plist */,
 				27414465224CA81900DF0555 /* main.m */,
+				274144A5224DB8BF00DF0555 /* DownloadDemoViewController.h */,
+				274144A6224DB8BF00DF0555 /* DownloadDemoViewController.m */,
+				274144A8224DE56500DF0555 /* HttpDemoViewController.h */,
+				274144A9224DE56500DF0555 /* HttpDemoViewController.m */,
 			);
 			path = LTxNetworkDemo;
 			sourceTree = "<group>";
@@ -226,9 +231,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2741445B224CA81700DF0555 /* ViewController.m in Sources */,
 				27414466224CA81900DF0555 /* main.m in Sources */,
+				274144A7224DB8BF00DF0555 /* DownloadDemoViewController.m in Sources */,
 				27414458224CA81700DF0555 /* AppDelegate.m in Sources */,
+				274144AA224DE56500DF0555 /* HttpDemoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

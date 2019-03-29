@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import <LTxNetwork/LTxNetwork.h>
 
 @interface AppDelegate ()
 
@@ -18,15 +17,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [self testDownload];
     return YES;
 }
 
--(void)testDownload{
-    for (NSInteger i = 1; i < 20; ++i) {
-        [[LTxNetworkDownloadService sharedInstance] addDownloadTaskWithURL:@"https://developer.apple.com/ibeacon/Getting-Started-with-iBeacon.pdf?t=2" pathInSandbox:@"Library/Caches" saveName:[NSString stringWithFormat:@"test_download_%td.pdf",i]];
-    }
-}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

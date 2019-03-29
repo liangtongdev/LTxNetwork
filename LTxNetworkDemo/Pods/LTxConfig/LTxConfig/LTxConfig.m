@@ -19,7 +19,7 @@
  * 单例模式
  **/
 static LTxConfig *_instance;
-+ (instancetype)sharedInstance{
++ (LTxConfig*)sharedInstance{
     static dispatch_once_t onceTokenLTxConfig;
     dispatch_once(&onceTokenLTxConfig, ^{
         _instance = [[LTxConfig alloc] init];

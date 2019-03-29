@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * 单例模式
  **/
-+ (instancetype)sharedInstance;
++ (LTxConfig*)sharedInstance;
 
 /**
  * 系统初始化

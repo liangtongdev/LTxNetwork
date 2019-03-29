@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  *    @brief  实例
  */
-+(instancetype)sharedInstance;
++(LTxNetworkHttpService*)sharedInstance;
 
 - (NSURLSessionDataTask*)doGetWithURL:(NSString*)url param:(NSDictionary*)param complete:(LTxStringAndObjectCallbackBlock)complete;
 

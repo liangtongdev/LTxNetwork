@@ -9,7 +9,7 @@
 
 @implementation LTxNetworkHttpService
 static LTxNetworkHttpService *_instance;
-+ (instancetype)sharedInstance{
++ (LTxNetworkHttpService*)sharedInstance{
     static dispatch_once_t onceTokenLTxHttpService;
     dispatch_once(&onceTokenLTxHttpService, ^{
         _instance = [[LTxNetworkHttpService alloc] init];
@@ -105,15 +105,13 @@ static LTxNetworkHttpService *_instance;
                          responseObject:(id)responseObject
                                complete:(LTxStringAndObjectCallbackBlock)complete{
     
-    NSString* errorTips;
-    NSDictionary* data;
-    if ([responseObject isKindOfClass:[NSDictionary class]]) {
-        data = [responseObject objectForKey:@"data"];
-        
-        NSString* msg = [responseObject objectForKey:@"message"];
-        NSInteger code = [[responseObject objectForKey:@"code"] integerValue];
-        errorTips = [LTxError errorTipsWithHttpStatusCode:statusCode code:code message:msg];
-    }
+    
+    NSDictionary* data = [responseObject objectForKey:@"data"];
+    
+    NSString* msg = [responseObject objectForKey:@"message"];
+    NSInteger code = [[responseObject objectForKey:@"code"] integerValue];
+    NSString* errorTips = [LTxError errorTipsWithHttpStatusCode:statusCode code:code message:msg];
+    
     if (complete) {
         complete(errorTips, data);
     }

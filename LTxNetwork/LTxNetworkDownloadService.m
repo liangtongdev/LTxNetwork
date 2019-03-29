@@ -40,16 +40,13 @@ static LTxNetworkDownloadService *_instance;
  **/
 -(void)setupDownloadTaskService{
     _taskArray = [[NSMutableArray alloc] init];
-    NSInteger maxCount = [LTxConfig sharedInstance].maxDownloadingCount < 1;
-    if (maxCount < 1) {
-        maxCount = 1;
-    }
+    NSInteger maxCount = [LTxConfig sharedInstance].maxDownloadingCount < 1 ? 1 : [LTxConfig sharedInstance].maxDownloadingCount ;
     _semaphore = dispatch_semaphore_create(maxCount);
     _queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     
     NSURLSessionConfiguration* configuration;
     if ([LTxConfig sharedInstance].enableBackgroundDownload) {
-        configuration = [NSURLSessionConfiguration backgroundSessionConfigurationWithIdentifier:@"ltx_core_download_task_service_identifier"];
+        configuration = [NSURLSessionConfiguration backgroundSessionConfigurationWithIdentifier:@"ltx_network_download_task_service_identifier"];
     }else{
         configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     }
